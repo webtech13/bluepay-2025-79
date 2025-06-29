@@ -16,7 +16,7 @@ const EarnMore = () => {
   };
 
   const generateReferralLink = () => {
-    return `https://bluepay-registration.vercel.app/`;
+    return `https://paygo-officialuser.vercel.app`;
   };
 
   const generateReferralMessage = () => {

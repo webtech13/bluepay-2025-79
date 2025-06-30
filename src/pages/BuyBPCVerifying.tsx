@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 const BuyBPCVerifying = () => {
   const navigate = useNavigate();
-  const [countdown, setCountdown] = useState(9);
+  const [countdown, setCountdown] = useState(5);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCountdown((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          navigate("/buy-bpc/confirmation");
+          navigate("/buy-bpc/success");
           return 0;
         }
         return prev - 1;
